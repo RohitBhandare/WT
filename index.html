@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .nav {
+        background: #000;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .nav li {
+        display: inline;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .nav #home {
+        background: #ca1c1c;
+    }
+
+    .nav li:hover {
+        background: #8b8888;
+    }
+
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* background-image: linear-gradient(indigo,rgb(87, 22, 87)); */
+    }
+
+    .card {
+        height: 330px;
+        width: 300px;
+        background: #fff;
+        margin: 20px;
+
+    }
+
+    .card:hover {
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .card .card-header img {
+        height: 200px;
+        width: 100%;
+        border-radius: 50px;
+
+
+    }
+
+    .card-btns button {
+        padding: 10px;
+        background: orange;
+        border-color: orange;
+        width: 100%;
+
+    }
+
+    #product-offer {
+        color: red;
+        font-size: 12px;
+    }
+
+    #pname {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #pprice {
+        color: green;
+    }
+
+    .customers-feedback {
+        padding: 20px;
+        background: red;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .customers-feedback input {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .customers-feedback button {
+        padding: 10px;
+    }
+
+    .ptitle {
+        background-image: linear-gradient(red, pink);
+        color: white;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li id="home">Home</li>
+                <li>Login</li>
+                <li>About us</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="banner">
+            <img src="https://c0.wallpaperflare.com/preview/565/228/846/japanese-japan-restaurant-culture.jpg" alt="">
+        </div>
+    </header>
+    <div class="ptitle">
+        <h1 align="center">Our Products</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://www.cookwithmanali.com/wp-content/uploads/2018/04/Vada-Pav-500x500.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Vada Pav</h2>
+                <h3 id="pprice" align="center">Price: 50 <span id="product-offer">5% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://assets.cntraveller.in/photos/60ba26c0bfe773a828a47146/4:3/w_1440,h_1080,c_limit/Burgers-Mumbai-Delivery.jpg"
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Burger</h2>
+                <h3 id="pprice" align="center">Price: 300 <span id="product-offer">10% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1526937193%2Fturkey-burger-pizza-1807-p45.jpg%3Fitok%3DLeaTh7YO"
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Pizza</h2>
+                <h3 id="pprice" align="center">Price: 500 <span id="product-offer">20% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://static.toiimg.com/thumb/61050397.cms?imgsize=246859&width=800&height=800" alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Samosa</h2>
+                <h3 id="pprice" align="center">Price: 50 <span id="product-offer">5% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://www.awesomecuisine.com/wp-content/uploads/2007/11/Pani-Puri.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Pani Puri</h2>
+                <h3 id="pprice" align="center">Price: 50 <span id="product-offer">5% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+
+            <div class="card-header">
+                <img src="https://www.cookwithmanali.com/wp-content/uploads/2018/04/Vada-Pav-500x500.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Vada Pav</h2>
+                <h3 id="pprice" align="center">Price: 50 <span id="product-offer">5% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://assets.cntraveller.in/photos/60ba26c0bfe773a828a47146/4:3/w_1440,h_1080,c_limit/Burgers-Mumbai-Delivery.jpg"
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Burger</h2>
+                <h3 id="pprice" align="center">Price: 300 <span id="product-offer">10% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F1526937193%2Fturkey-burger-pizza-1807-p45.jpg%3Fitok%3DLeaTh7YO"
+                    alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Pizza</h2>
+                <h3 id="pprice" align="center">Price: 500 <span id="product-offer">20% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://static.toiimg.com/thumb/61050397.cms?imgsize=246859&width=800&height=800" alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Samosa</h2>
+                <h3 id="pprice" align="center">Price: 50 <span id="product-offer">5% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <img src="https://www.awesomecuisine.com/wp-content/uploads/2007/11/Pani-Puri.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <h2 id="pname" align="center">Pani Puri</h2>
+                <h3 id="pprice" align="center">Price: 50 <span id="product-offer">5% off</span></h3>
+                <div class="card-btns">
+                    <button>Order Now</button>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last-container">
+    <h1 align="center">Feed Back Form</h1>
+    <div align="center" class="customers-feedback">
+        <form action="">
+            Enter your name: <input type="text" placeholder="Enter your name"><br>
+            Enter your Email: <input type="email" placeholder="Enter Email"><br>
+            Message:
+            <textarea name="" id="" cols="30" rows="10" placeholder="Leave your Valuable Comment"></textarea><br>
+            <button>Submit</button>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
